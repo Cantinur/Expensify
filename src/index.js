@@ -1,12 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = () => (
+    <div>
+        Hello World!
+    </div>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const AddExpencePage = () => (
+    <div>
+        Hello World again!
+    </div>
+);
+
+const EditExpensePage = () =>(
+    <div>
+        This is jet another page
+    </div>
+);
+
+const HelpPage = () =>(
+    <div>
+        This is the help page!
+    </div>
+);
+
+const routes =(
+  <BrowserRouter>
+  <div>
+    <Route path="/" component={App} exact={true} />
+    <Route path="/create" component={AddExpencePage} />
+    <Route path="/edit" component={EditExpensePage} />
+    <Route path="/help" component={HelpPage} />
+  </div>
+  </BrowserRouter>
+);
+
+ReactDOM.render(routes, document.getElementById('root'));

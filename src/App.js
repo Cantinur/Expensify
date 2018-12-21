@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import ExpenseDashboardPage from './components/ExpenseDashboardPage';
 
 class App extends Component{
   render(){
@@ -15,7 +15,7 @@ class App extends Component{
 
 const routes =(
   <BrowserRouter>
-  <Route path="/" component={App} />
+    <Route path="/" component={ExpenseDashboardPage} />
   </BrowserRouter>
 );
 

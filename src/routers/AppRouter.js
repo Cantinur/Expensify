@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../components/App';
+import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 import HelpPage from '../components/HelpPage';
 import EditExpensePage from '../components/EditExpensePage';
 import AddExpencePage from '../components/AddExpencePage';
@@ -12,7 +12,7 @@ const AppRouter =() => (
         <div>
             <Header/>
             <Switch>
-                <Route path="/" component={App} exact={true}/>
+                <Route path="/" component={ExpenseDashboardPage} exact={true}/>
                 <Route path="/create" component={AddExpencePage} />
                 <Route path="/edit" component={EditExpensePage} />
                 <Route path="/help" component={HelpPage} />
@@ -21,5 +21,4 @@ const AppRouter =() => (
         </div>
     </BrowserRouter>
 );
-
 export default AppRouter;

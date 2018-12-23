@@ -8,6 +8,11 @@ export default connect()(props => (
         <p>{props.amount} - {props.createdAt}</p>
         <p>{props.note}</p>
         <button onClick={() => 
+            props.history.push(`/${props.id}`)
+        }>
+            Edit
+        </button>
+        <button onClick={() => 
             props.dispatch(removeExpense(props))
         }>
             Remove

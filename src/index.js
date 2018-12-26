@@ -6,6 +6,7 @@ import configureStore from './store/configureStore.js';
 import { addExpence } from './actions/expenses.js';
 import getVisibleExpenses from './selectors/expenses.js';
 import './style/styles.scss';
+import './firebase/firebase';
 
 const store = configureStore();
 

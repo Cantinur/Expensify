@@ -1,21 +1,12 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {removeExpense} from '../actions/expenses';
+import { Link } from 'react-router-dom';
 
-export default connect()(props => (
+export default (props => (
     <div>
-        <h3>{props.description}</h3>
+        <Link to={`/edit/${props.id}`}> 
+            <h3>{props.description}</h3>
+        </Link>
         <p>{props.amount} - {props.createdAt}</p>
         <p>{props.note}</p>
-        <button onClick={() => 
-            props.history.push(`/${props.id}`)
-        }>
-            Edit
-        </button>
-        <button onClick={() => 
-            props.dispatch(removeExpense(props))
-        }>
-            Remove
-        </button>
     </div>
 ));

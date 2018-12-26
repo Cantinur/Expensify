@@ -20,7 +20,7 @@ export const removeExpense = ({ id }) => ({
 
 //EDIT_EXPEMSE
 export const editeExpense = ({ id, updates }) =>({
-    type:'EDIT_EXPEMSE',
+    type:'EDIT_EXPENSE',
     id,
     updates
 });

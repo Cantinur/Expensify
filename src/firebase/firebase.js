@@ -21,7 +21,11 @@ database.ref().set({
         city: 'Koblenz',
         country: 'Germany'
     }
-});
+}).then(() => {
+    console.log('Data is saved');
+}).catch(() => {
+    console.log('Somthing went wrong');
+})
 
 // database.ref().set('This is some date');
 

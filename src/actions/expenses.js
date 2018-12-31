@@ -31,8 +31,6 @@ export const removeExpense = ({ id }) => ({
     type:'REMOVE_EXPENSE',
     id
 });
-//1. Create startRemove
-//2. Use start Remove in editeExpensePage
 
 export const startRemoveExpense = ({id} = {}) => {
     return dispatch => {
@@ -48,6 +46,14 @@ export const editeExpense = ({ id, updates }) =>({
     id,
     updates
 });
+
+export const startEditExpense = ({id, updates}) => {
+    return dispatch => (
+        database.ref(`expenses/${id}`).update(updates).then(() => {
+            dispatch(editeExpense({id, updates}));
+        })
+    );
+};
 
 //SET_EXPENSES
 export const setExpenses = expenses => ({

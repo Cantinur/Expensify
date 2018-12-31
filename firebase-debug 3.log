@@ -1,0 +1,21 @@
+[debug] [2018-12-31T19:10:41.038Z] ----------------------------------------------------------------------
+[debug] [2018-12-31T19:10:41.041Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2018-12-31T19:10:41.041Z] CLI Version:   6.2.2
+[debug] [2018-12-31T19:10:41.041Z] Platform:      darwin
+[debug] [2018-12-31T19:10:41.041Z] Node Version:  v10.14.0
+[debug] [2018-12-31T19:10:41.042Z] Time:          Mon Dec 31 2018 20:10:41 GMT+0100 (Central European Standard Time)
+[debug] [2018-12-31T19:10:41.042Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-31T19:10:41.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-31T19:10:41.054Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/henrik/Documents/GitHub/expencify
+

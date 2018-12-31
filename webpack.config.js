@@ -1,6 +1,8 @@
 //Entery -> Output file
 const path = require('path');
 
+//process.env.NODE_ENV
+
 module.exports = {
     entry: './src/index.js',
     output:{

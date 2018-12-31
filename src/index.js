@@ -6,7 +6,7 @@ import configureStore from './store/configureStore.js';
 import { startSetExpenses } from './actions/expenses.js';
 import getVisibleExpenses from './selectors/expenses.js';
 import './style/styles.scss';
-import './firebase/firebase';
+import { firebase } from './firebase/firebase';
 
 const store = configureStore();
 
@@ -31,3 +31,7 @@ ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
 store.dispatch(startSetExpenses()).then(()=>{
     ReactDOM.render(jsx, document.getElementById('root'));
 });
+
+firebase.auth().onAuthStateChanged(user => {
+    console.log(user ? 'Loged in' : 'Is not loged in');
+})

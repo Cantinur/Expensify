@@ -1,0 +1,64 @@
+[debug] [2018-12-31T19:15:32.735Z] ----------------------------------------------------------------------
+[debug] [2018-12-31T19:15:32.737Z] Command:       /usr/local/bin/node /usr/local/bin/firebase -P expensify-3bf05 init
+[debug] [2018-12-31T19:15:32.737Z] CLI Version:   6.2.2
+[debug] [2018-12-31T19:15:32.737Z] Platform:      darwin
+[debug] [2018-12-31T19:15:32.737Z] Node Version:  v10.14.0
+[debug] [2018-12-31T19:15:32.791Z] Time:          Mon Dec 31 2018 20:15:32 GMT+0100 (Central European Standard Time)
+[debug] [2018-12-31T19:15:32.792Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-31T19:15:32.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-31T19:15:32.801Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/henrik/Documents/GitHub/expencify
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-12-31T19:15:42.142Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/expensify-3bf05  
+ 
+[debug] [2018-12-31T19:15:44.683Z] <<< HTTP RESPONSE 200
+[info] i  Using project expensify-3bf05 (Expensify)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2018-12-31T19:16:05.623Z] >>> HTTP REQUEST GET https://expensify-3bf05.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2018-12-31T19:16:14.903Z] <<< HTTP RESPONSE 200
+[info] ✔  Database Rules for expensify-3bf05 have been downloaded to database.rules.json.
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2018-12-31T19:16:14.913Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-31T19:16:14.916Z] > authorizing via signed-in user
+[debug] [2018-12-31T19:16:14.917Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/expensify-3bf05  
+ 
+[debug] [2018-12-31T19:16:15.392Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-31T19:16:15.395Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/expensify-3bf05?updateMask=usageSettings  
+
+[debug] [2018-12-31T19:16:15.396Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/expensify-3bf05?updateMask=usageSettings  
+
+[debug] [2018-12-31T19:16:19.776Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-31T19:16:20.951Z] <<< HTTP RESPONSE 200
+[info] ✔  Wrote functions/package.json
+[info] ✔  Wrote functions/.eslintrc.json
+[info] ✔  Wrote functions/index.js
